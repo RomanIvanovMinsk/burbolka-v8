@@ -1,5 +1,5 @@
 ﻿@inherits UmbracoViewPage<ContentModels.Products>
-@using ContentModels = Umbraco.Web.PublishedModels;
+@using ContentModels = Burbolka.Models.ContentModels;
 @{
     Layout = "master.cshtml";
 }
@@ -21,7 +21,7 @@
         <div class="product-grid">
             @if (Model.FeaturedProducts != null)
             {
-                foreach (Product product in Model.FeaturedProducts)
+                foreach (ContentModels.Product product in Model.FeaturedProducts)
                 {
                     <a href="@product.Url" class="product-grid__item" style="background-image: url('@product.Photos.Url')">
                         <div class="product-grid__item__overlay">
