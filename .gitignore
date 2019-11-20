@@ -1,0 +1,51 @@
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Mac OS X Finder Desktop Services Stores
+.DS_Store
+
+# git merge files
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+
+# User-specific files
+*.suo
+*.user
+*.cache
+*.orig
+*.udt
+
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+[Oo]bj/
+[Bb]in/
+[Dd]ebug/
+[Bb]uild/
+[Rr]elease/
+
+#Project related
+node_modules
+.jshintrc
+
+#Deployment/
+/Sources/packages/
+uSync.Archive/
+media/
+App_Data/
+NuGetBackup/
+
+
+Sources/Burbolka.Web/[Uu]mbraco/
+Sources/Burbolka.Web/[Uu]mbraco_[Cc]lient/
+!/Sources/Burbolka.Web/media/
+Sources/Burbolka.Web/media/*/*.*
+Sources/Burbolka.Web/config/connectionString.config
+Sources/Burbolka.Web/config/smtp.config
+!Sources/Burbolka.Web/Views/PatternLab/Atoms/Media
+!Sources/Burbolka.Models/PatternLab/Atoms/Media
+/Sources/.vs/*
