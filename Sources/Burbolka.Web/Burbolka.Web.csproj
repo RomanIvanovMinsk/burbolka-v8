@@ -458,6 +458,20 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Burbolka.Common\Burbolka.Common.csproj">
+      <Project>{15e946f7-3a3f-4bac-8caf-32c7beb2fde9}</Project>
+      <Name>Burbolka.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Burbolka.Core\Burbolka.Core.csproj">
+      <Project>{e9662bef-020e-4118-aed8-0a266fff4e22}</Project>
+      <Name>Burbolka.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Burbolka.Models\Burbolka.Models.csproj">
+      <Project>{851b72be-394c-4ac2-a8c1-79518c6fe234}</Project>
+      <Name>Burbolka.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

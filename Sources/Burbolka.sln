@@ -4,6 +4,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Burbolka.Web", "Burbolka.Web\Burbolka.Web.csproj", "{556E5382-0FDD-4838-91A8-C2133BF2D11F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{851B72BE-394C-4AC2-A8C1-79518C6FE234} = {851B72BE-394C-4AC2-A8C1-79518C6FE234}
+		{E9662BEF-020E-4118-AED8-0A266FFF4E22} = {E9662BEF-020E-4118-AED8-0A266FFF4E22}
+		{15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9} = {15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Burbolka.Models", "Burbolka.Models\Burbolka.Models.csproj", "{851B72BE-394C-4AC2-A8C1-79518C6FE234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Burbolka.Common", "Burbolka.Common\Burbolka.Common.csproj", "{15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{851B72BE-394C-4AC2-A8C1-79518C6FE234} = {851B72BE-394C-4AC2-A8C1-79518C6FE234}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Burbolka.Core", "Burbolka.Core\Burbolka.Core.csproj", "{E9662BEF-020E-4118-AED8-0A266FFF4E22}"
+	ProjectSection(ProjectDependencies) = postProject
+		{851B72BE-394C-4AC2-A8C1-79518C6FE234} = {851B72BE-394C-4AC2-A8C1-79518C6FE234}
+		{15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9} = {15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +33,18 @@ Global
 		{556E5382-0FDD-4838-91A8-C2133BF2D11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{556E5382-0FDD-4838-91A8-C2133BF2D11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{556E5382-0FDD-4838-91A8-C2133BF2D11F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851B72BE-394C-4AC2-A8C1-79518C6FE234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851B72BE-394C-4AC2-A8C1-79518C6FE234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851B72BE-394C-4AC2-A8C1-79518C6FE234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851B72BE-394C-4AC2-A8C1-79518C6FE234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E946F7-3A3F-4BAC-8CAF-32C7BEB2FDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9662BEF-020E-4118-AED8-0A266FFF4E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9662BEF-020E-4118-AED8-0A266FFF4E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9662BEF-020E-4118-AED8-0A266FFF4E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9662BEF-020E-4118-AED8-0A266FFF4E22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
